@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 style="display: flex; justify-content: center;">Zoológico del 8.</h1>
+        <p style="display: flex; justify-content: center;">Descubre las maravillas de la nauraleza!.</p>
+    </header>
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="/pages/Galeria.html">Galeria</a>
+        <a href="">Acerca</a>
+        <a href="/pages/Forms.html">Contacto</a>
+    </nav>
+    <hr>
+    <h2 style="text-align: center;">Registro de usuario</h2>
+    <form action="#">
+        <label for="nombre">Ingrese su nombre:</label>
+        <br><br>
+        <input type="text" id="nombre" placeholder="Tu nombre" size="15" required>
+        <br><br>
+        <label for="email">Ingrese su correo electrónico</label>
+        <br><br>
+        <input type="email" id="email" placeholder="Tu e-mail" size="15" required>
+        <br><br>
+        <label for="contraseña">Ingrese su contraseña:</label>
+        <br><br>
+        <input type="password" id="contraseña" placeholder="Tu contraseña aquí." size="15" required>
+        <br><br>
+        <label for="fecha_nacimiento"> Ingresa tu fecha de nacimiento:</label>
+        <br><br>
+        <input type="date" id="fecha_nacimiento" required>
+        <br><br>
+        <label for="telef">Ingrese su número telefónico</label>
+        <br><br>
+        <input type="tel" id="telef" placeholder="+593-999-999" size="15" required>
+        <br><br>
+        <label for="cargas">Cargas familiares:</label>
+        <br><br>
+        <input type="number" id="cargas">
+        <br><br>
+        <label for="">Género</label>
+        <label for="Masculino"><input type="radio" id="Masculino" name="genero">Masculino</label>
+        <label for="Femenino"><input type="radio" id="Femenino" name="genero">Femenino</label>
+        <label for="No_definido"><input type="radio" id="No_definido" name="genero">No definido</label>
+        <br><br>
+        <label for="">Ciudad</label>
+        <select name="Ciudad" id="Ciudad">
+            <option value="Seleccionar" disabled selected>Seleccionar:</option>
+            <option value="Tangamandapio">Tangamandapio</option>
+            <option value="Quito">Quito</option>
+            <option value="Latacunga">Ibarra</option>
+            <option value="Cuenca">Cuenca</option>
+            <option value="Guayaquil">Guayaquil</option>
+            <option value="Otros">Otros</option>
+        </select>
+        <br><br>
+        <label for="comentarios">Ingrese sus comentarios:</label>
+        <textarea name="comentarios" id="comentarios" rows="5" cols="50" placeholder="Escribe amigo!!!"></textarea>
+        <br><br>
+        <label for="fotos">Suba sus fotos:</label>
+        <br><br>
+        <input type="file" name="fotos" id="fotos">
+        <br><br>
+        <!--botones-->
+        <br><br>
+        <button>simple</button>
+        <br><br>
+        <input type="submit" value="enviar">
+        <br><br>
+        <button type="reset">Limpiar</button>
+        <br><br>
+    </form>
+</body>
+</html>
